@@ -720,6 +720,9 @@
                 var dc = centerOf(done);
                 burstPetals(dc.x, window.innerHeight * 0.35, 26);
                 burstHearts(dc.x, window.innerHeight * 0.35, 8);
+                setTimeout(function () {
+                  done.scrollIntoView({ behavior: reduced ? "auto" : "smooth", block: "center" });
+                }, 120);
               }, 550);
             }
           });
