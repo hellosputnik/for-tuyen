@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <meta name="color-scheme" content="light" />
+    <meta name="color-scheme" content="light dark" />
     <link rel="icon" href="data:," />
     <title>Dành tặng Tuyền — 20/10</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -14,7 +14,7 @@
     />
     <style>
       :root {
-        color-scheme: light;
+        color-scheme: light dark;
         --bg: #fdf1ec;
         --bg-soft: #fbe3da;
         --card: #fffaf6;
@@ -28,6 +28,44 @@
         --leaf: #5d7d4f;
         --line: #ecc9c2;
         --shadow: 0 18px 44px rgba(142, 27, 50, 0.16);
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #1d1216;
+          --bg-soft: #2f1b22;
+          --card: #2b1a20;
+          --ink: #fdeee9;
+          --ink-soft: #d2a3ab;
+          --rose: #f0607e;
+          --rose-deep: #f28aa0;
+          --rose-soft: #ef7d92;
+          --blush: #f7c3cd;
+          --gold: #d9b356;
+          --leaf: #8ab07f;
+          --line: #4e303a;
+          --shadow: 0 18px 44px rgba(0, 0, 0, 0.5);
+        }
+        .big-btn {
+          background: linear-gradient(135deg, #c22744, #8e1b32);
+        }
+        .env-back {
+          background: linear-gradient(160deg, #ef7d92, #c22744);
+        }
+        .env-front {
+          background:
+            linear-gradient(to top right, transparent 49.4%, #8e1b32 49.6%, #8e1b32 50.4%, transparent 50.6%),
+            linear-gradient(to top left, transparent 49.4%, #8e1b32 49.6%, #8e1b32 50.4%, transparent 50.6%),
+            linear-gradient(160deg, #c22744, #8e1b32);
+        }
+        .env-flap {
+          background: linear-gradient(180deg, #8e1b32, #c22744);
+        }
+        .env-letter-peek span {
+          color: #e84a68;
+        }
+        .letter p.greeting {
+          color: #f0607e;
+        }
       }
       * { box-sizing: border-box; }
       html { scroll-behavior: smooth; }
